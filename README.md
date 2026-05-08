@@ -365,6 +365,7 @@ Deep dives into Claude Code's internal design.
 | [**sanbuphy/claude-code-source-code**](https://github.com/sanbuphy/claude-code-source-code) [![Star](https://img.shields.io/github/stars/sanbuphy/claude-code-source-code.svg?style=social&label=Star)](https://github.com/sanbuphy/claude-code-source-code) | Quadrilingual analysis (EN/JA/KO/ZH) — multi-domain reports covering telemetry, codenames, KAIROS, unreleased tools. |
 | [**cablate/claude-code-research**](https://github.com/cablate/claude-code-research) [![Star](https://img.shields.io/github/stars/cablate/claude-code-research.svg?style=social&label=Star)](https://github.com/cablate/claude-code-research) | Independent research on internals, Agent SDK, and related tooling. |
 | [**Yuyz0112/claude-code-reverse**](https://github.com/Yuyz0112/claude-code-reverse) [![Star](https://img.shields.io/github/stars/Yuyz0112/claude-code-reverse.svg?style=social&label=Star)](https://github.com/Yuyz0112/claude-code-reverse) | Visualize Claude Code's LLM interactions — log parser and visual tool to trace prompts, tool calls, and compaction. |
+| [**Piebald-AI/claude-code-system-prompts**](https://github.com/Piebald-AI/claude-code-system-prompts) [![Star](https://img.shields.io/github/stars/Piebald-AI/claude-code-system-prompts.svg?style=social&label=Star)](https://github.com/Piebald-AI/claude-code-system-prompts) | Version-tracked prompt corpus across 170+ Claude Code releases — main system prompt, builtin tool descriptions, sub-agent prompts (Plan/Explore/Task), and ~40 system reminders. Updated within minutes of each release. |
 
 ### Open-Source Reimplementations
 
@@ -399,6 +400,7 @@ External resources that complement this paper's design-space analysis — concep
 | [**deusyu/harness-engineering**](https://github.com/deusyu/harness-engineering) [![Star](https://img.shields.io/github/stars/deusyu/harness-engineering.svg?style=social&label=Star)](https://github.com/deusyu/harness-engineering) | Learning archive — original concept essays, independent thinking pieces, and curated translations of harness-engineering writing; from concept to independent practice. |
 | [**walkinglabs/learn-harness-engineering**](https://github.com/walkinglabs/learn-harness-engineering) [![Star](https://img.shields.io/github/stars/walkinglabs/learn-harness-engineering.svg?style=social&label=Star)](https://github.com/walkinglabs/learn-harness-engineering) | Project-based English course with PDF coursebooks, syllabus, and capstone, organized around five harness subsystems: instructions, state, verification, scope, and session lifecycle. |
 | [**china-qijizhifeng/agentic-harness-engineering**](https://github.com/china-qijizhifeng/agentic-harness-engineering) [![Star](https://img.shields.io/github/stars/china-qijizhifeng/agentic-harness-engineering.svg?style=social&label=Star)](https://github.com/china-qijizhifeng/agentic-harness-engineering) | Observability system that auto-evolves a coding agent's harness — a meta-agent reads execution traces and rewrites system prompts, tools, middleware, skills, sub-agents, and memory. |
+| [**ZhangHanDong/harness-engineering-from-cc-to-ai-coding**](https://github.com/ZhangHanDong/harness-engineering-from-cc-to-ai-coding) [![Star](https://img.shields.io/github/stars/ZhangHanDong/harness-engineering-from-cc-to-ai-coding.svg?style=social&label=Star)](https://github.com/ZhangHanDong/harness-engineering-from-cc-to-ai-coding) | The "Horse Book" (《马书》) — Chinese mdBook framing Claude Code v2.1.88 as a Harness Engineering case study; covers architecture, prompt engineering, context management, prompt cache, security, and lessons for builders. |
 
 ### Blog Posts & Technical Articles
 
@@ -413,11 +415,13 @@ External resources that complement this paper's design-space analysis — concep
 | [MindStudio — "Three-Layer Memory Architecture"](https://www.mindstudio.ai/blog/claude-code-source-leak-memory-architecture) | In-context memory, MEMORY.md pointer index, CLAUDE.md static config. Best single resource on memory. |
 | [WaveSpeed — "Claude Code Architecture: Leaked Source Deep Dive"](https://wavespeed.ai/blog/posts/claude-code-architecture-leaked-source-deep-dive/) | 512K-line TS source deep dive; context compression and anti-distillation. |
 | [Zain Hasan — "Inside Claude Code: An Architecture Deep Dive"](https://zainhas.github.io/blog/2026/inside-claude-code-architecture/) | Layered architecture, 5 entry modes, multi-agent walkthrough. |
+| [Addy Osmani — "Agent Harness Engineering"](https://addyosmani.com/blog/agent-harness-engineering/) | Frames harness engineering as a discipline with named primitives (filesystem/git state, sandboxes, AGENTS.md memory, compaction, planning loops, hooks); cites Claude Code as the canonical mature example. |
 
 ### Related Academic Papers
 
 | Paper | Venue | Relevance |
 |:------|:------|:----------|
+| [Architectural Design Decisions in AI Agent Harnesses](https://arxiv.org/abs/2604.18071) | arXiv | Source-grounded study of 70 agent-system projects identifying recurring design dimensions; closest contemporary peer to this paper's design-space framing. |
 | [Decoding the Configuration of AI Coding Agents](https://arxiv.org/abs/2511.09268) | arXiv | Empirical study of 328 Claude Code configuration files — SE concerns and co-occurrence patterns. |
 | [On the Use of Agentic Coding Manifests](https://arxiv.org/abs/2509.14744) | arXiv | Analyzed 253 CLAUDE.md files from 242 repos — structural patterns in operational commands. |
 | [Context Engineering for Multi-Agent Code Assistants](https://arxiv.org/abs/2508.08322) | arXiv | Multi-agent workflow combining multiple LLMs for code generation. |

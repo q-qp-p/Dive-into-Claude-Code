@@ -365,6 +365,7 @@ Claude Code 回答了每个生产级编码智能体都必须面对的**四个设
 | [**sanbuphy/claude-code-source-code**](https://github.com/sanbuphy/claude-code-source-code) [![Star](https://img.shields.io/github/stars/sanbuphy/claude-code-source-code.svg?style=social&label=Star)](https://github.com/sanbuphy/claude-code-source-code) | 四语（EN/JA/KO/ZH）分析——多领域报告，涵盖遥测、代号、KAIROS、未发布的工具。 |
 | [**cablate/claude-code-research**](https://github.com/cablate/claude-code-research) [![Star](https://img.shields.io/github/stars/cablate/claude-code-research.svg?style=social&label=Star)](https://github.com/cablate/claude-code-research) | 关于内部结构、Agent SDK 和相关工具的独立研究。 |
 | [**Yuyz0112/claude-code-reverse**](https://github.com/Yuyz0112/claude-code-reverse) [![Star](https://img.shields.io/github/stars/Yuyz0112/claude-code-reverse.svg?style=social&label=Star)](https://github.com/Yuyz0112/claude-code-reverse) | 可视化 Claude Code 的 LLM 交互——日志解析器和可视化工具，追踪提示、工具调用和压缩。 |
+| [**Piebald-AI/claude-code-system-prompts**](https://github.com/Piebald-AI/claude-code-system-prompts) [![Star](https://img.shields.io/github/stars/Piebald-AI/claude-code-system-prompts.svg?style=social&label=Star)](https://github.com/Piebald-AI/claude-code-system-prompts) | 跨 170+ 个 Claude Code 版本的 prompt 语料库——主 system prompt、内置工具描述、子智能体提示（Plan/Explore/Task）以及约 40 条 system reminder。每次 Claude Code 发布后数分钟内更新。 |
 
 ### 开源重新实现
 
@@ -399,6 +400,7 @@ Claude Code 回答了每个生产级编码智能体都必须面对的**四个设
 | [**deusyu/harness-engineering**](https://github.com/deusyu/harness-engineering) [![Star](https://img.shields.io/github/stars/deusyu/harness-engineering.svg?style=social&label=Star)](https://github.com/deusyu/harness-engineering) | 学习档案——原创概念解读、独立思考与外文翻译；从概念理解到独立实践的 Harness Engineering 入门。 |
 | [**walkinglabs/learn-harness-engineering**](https://github.com/walkinglabs/learn-harness-engineering) [![Star](https://img.shields.io/github/stars/walkinglabs/learn-harness-engineering.svg?style=social&label=Star)](https://github.com/walkinglabs/learn-harness-engineering) | 英文项目制课程——PDF 课本、大纲与 capstone 项目，围绕指令、状态管理、验证机制、作用域约束和会话生命周期这五个 harness 子系统展开。 |
 | [**china-qijizhifeng/agentic-harness-engineering**](https://github.com/china-qijizhifeng/agentic-harness-engineering) [![Star](https://img.shields.io/github/stars/china-qijizhifeng/agentic-harness-engineering.svg?style=social&label=Star)](https://github.com/china-qijizhifeng/agentic-harness-engineering) | 自动演化 coding agent harness 的可观测系统——一个 meta-agent 读取执行 trace，自动改写 system prompt、工具、中间件、skills、子 agent 和记忆。 |
+| [**ZhangHanDong/harness-engineering-from-cc-to-ai-coding**](https://github.com/ZhangHanDong/harness-engineering-from-cc-to-ai-coding) [![Star](https://img.shields.io/github/stars/ZhangHanDong/harness-engineering-from-cc-to-ai-coding.svg?style=social&label=Star)](https://github.com/ZhangHanDong/harness-engineering-from-cc-to-ai-coding) | 《马书》——把 Claude Code v2.1.88 作为 Harness Engineering 案例研究的中文 mdBook；涵盖架构、prompt engineering、上下文管理、prompt cache、安全和给构建者的经验。 |
 
 ### 博客文章与技术文章
 
@@ -413,11 +415,13 @@ Claude Code 回答了每个生产级编码智能体都必须面对的**四个设
 | [MindStudio — "Three-Layer Memory Architecture"](https://www.mindstudio.ai/blog/claude-code-source-leak-memory-architecture) | 上下文内记忆、MEMORY.md 指针索引、CLAUDE.md 静态配置。关于记忆的最佳单一资源。 |
 | [WaveSpeed — "Claude Code Architecture: Leaked Source Deep Dive"](https://wavespeed.ai/blog/posts/claude-code-architecture-leaked-source-deep-dive/) | 512K 行 TS 源码深度剖析；上下文压缩和反蒸馏。 |
 | [Zain Hasan — "Inside Claude Code: An Architecture Deep Dive"](https://zainhas.github.io/blog/2026/inside-claude-code-architecture/) | 分层架构、5 种入口模式、多智能体演练。 |
+| [Addy Osmani — "Agent Harness Engineering"](https://addyosmani.com/blog/agent-harness-engineering/) | 把 harness engineering 视为一门工程学科，给出命名化的原语（文件系统/git 状态、沙箱、AGENTS.md 记忆、压缩、规划循环、hooks）；将 Claude Code 作为最成熟的范例。 |
 
 ### 相关学术论文
 
 | 论文 | 会议 | 相关性 |
 |:------|:------|:------|
+| [Architectural Design Decisions in AI Agent Harnesses](https://arxiv.org/abs/2604.18071) | arXiv | 基于源码、对 70 个 agent 系统项目的研究，识别出反复出现的设计维度；与本文设计空间框架最贴近的同期对照工作。 |
 | [Decoding the Configuration of AI Coding Agents](https://arxiv.org/abs/2511.09268) | arXiv | 对 328 个 Claude Code 配置文件的实证研究——软件工程关注点与共现模式。 |
 | [On the Use of Agentic Coding Manifests](https://arxiv.org/abs/2509.14744) | arXiv | 分析了 242 个仓库中的 253 个 CLAUDE.md 文件——操作性命令中的结构模式。 |
 | [Context Engineering for Multi-Agent Code Assistants](https://arxiv.org/abs/2508.08322) | arXiv | 结合多个 LLM 进行代码生成的多智能体工作流。 |
