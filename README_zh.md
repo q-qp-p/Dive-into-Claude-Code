@@ -438,30 +438,85 @@ Claude Code 回答了每个生产级编码智能体都必须面对的**四个设
 
 ---
 
-## 其他值得关注的 AI 智能体项目
+<details>
+<summary><h2>其他值得关注的 AI 智能体项目</h2></summary>
 
-最近推出（2025-2026 年）的 Claude Code 生态系统外的开源 AI 智能体项目。
+围绕 Claude Code 的更广阔智能体设计空间。上方的[跨系统对比](#跨系统对比claude-code-vs-openclaw-vs-hermes-agent)节深入分析了三个最相近的同类系统（Claude Code、OpenClaw、Hermes-Agent）；下方条目则在更广的范围给出语境，涵盖编码智能体同类、框架、记忆系统、harness 扩展、MCP 生态和专业领域智能体。
+
+### 编码智能体 CLI 与 IDE Harness
 
 | 仓库 | 推出时间 | 重点 |
 |:-----------|:-------|:------|
-| [**openclaw/openclaw**](https://github.com/openclaw/openclaw) [![Star](https://img.shields.io/github/stars/openclaw/openclaw.svg?style=social&label=Star)](https://github.com/openclaw/openclaw) | 2026 年 1 月 | 跨消息平台的本地优先个人 AI 助手。 |
-| [**sst/opencode**](https://github.com/sst/opencode) [![Star](https://img.shields.io/github/stars/sst/opencode.svg?style=social&label=Star)](https://github.com/sst/opencode) | 2025 年 6 月 | 与模型厂商无关的终端编码智能体。 |
-| [**NousResearch/hermes-agent**](https://github.com/nousresearch/hermes-agent) [![Star](https://img.shields.io/github/stars/nousresearch/hermes-agent.svg?style=social&label=Star)](https://github.com/nousresearch/hermes-agent) | 2026 年 2 月 | 具有跨会话记忆的自我改进个人智能体。 |
-| [**666ghj/MiroFish**](https://github.com/666ghj/MiroFish) [![Star](https://img.shields.io/github/stars/666ghj/MiroFish.svg?style=social&label=Star)](https://github.com/666ghj/MiroFish) | 2026 年 3 月 | 多智能体群体智能模拟引擎。 |
+| [**openclaw/openclaw**](https://github.com/openclaw/openclaw) [![Star](https://img.shields.io/github/stars/openclaw/openclaw.svg?style=social&label=Star)](https://github.com/openclaw/openclaw) | 2026 年 1 月 | 跨消息平台的本地优先个人 AI 助手。（[第 10 节分析](#跨系统对比claude-code-vs-openclaw-vs-hermes-agent)） |
+| [**NousResearch/hermes-agent**](https://github.com/nousresearch/hermes-agent) [![Star](https://img.shields.io/github/stars/nousresearch/hermes-agent.svg?style=social&label=Star)](https://github.com/nousresearch/hermes-agent) | 2026 年 2 月 | 具有跨会话记忆的自我改进个人智能体。（[第 10 节分析](#跨系统对比claude-code-vs-openclaw-vs-hermes-agent)） |
+| [**sst/opencode**](https://github.com/sst/opencode) [![Star](https://img.shields.io/github/stars/sst/opencode.svg?style=social&label=Star)](https://github.com/sst/opencode) | 2025 年 6 月 | 与模型厂商无关的终端编码智能体，集成 ACP。 |
+| [**Aider-AI/aider**](https://github.com/Aider-AI/aider) [![Star](https://img.shields.io/github/stars/Aider-AI/aider.svg?style=social&label=Star)](https://github.com/Aider-AI/aider) | 2023 年 | 在终端中与 LLM 结对编程，支持主流模型。 |
+| [**continuedev/continue**](https://github.com/continuedev/continue) [![Star](https://img.shields.io/github/stars/continuedev/continue.svg?style=social&label=Star)](https://github.com/continuedev/continue) | 2023 年 | IDE 中受版本控制的 AI 检查，配套开源 Continue CLI。 |
+| [**google-gemini/gemini-cli**](https://github.com/google-gemini/gemini-cli) [![Star](https://img.shields.io/github/stars/google-gemini/gemini-cli.svg?style=social&label=Star)](https://github.com/google-gemini/gemini-cli) | 2025 年 | Google 开源终端编码智能体，含 ReAct 循环与 MCP 支持。 |
+| [**openai/codex**](https://github.com/openai/codex) [![Star](https://img.shields.io/github/stars/openai/codex.svg?style=social&label=Star)](https://github.com/openai/codex) | 2025 年 | OpenAI 的本地终端编码智能体，Rust 实现。 |
+| [**OpenHands/OpenHands**](https://github.com/OpenHands/OpenHands) [![Star](https://img.shields.io/github/stars/OpenHands/OpenHands.svg?style=social&label=Star)](https://github.com/OpenHands/OpenHands) | 2024 年 | 开源 SWE 智能体平台（原 OpenDevin），含沙箱化运行时。 |
+| [**cline/cline**](https://github.com/cline/cline) [![Star](https://img.shields.io/github/stars/cline/cline.svg?style=social&label=Star)](https://github.com/cline/cline) | 2024 年 | VS Code 智能体，显式 Plan/Act 双阶段监督循环。 |
+| [**block/goose**](https://github.com/block/goose) [![Star](https://img.shields.io/github/stars/block/goose.svg?style=social&label=Star)](https://github.com/block/goose) | 2025 年 | Block 开源、编辑器无关的智能体，MCP 风格扩展。 |
+| [**charmbracelet/crush**](https://github.com/charmbracelet/crush) [![Star](https://img.shields.io/github/stars/charmbracelet/crush.svg?style=social&label=Star)](https://github.com/charmbracelet/crush) | 2025 年 | Go 编写的智能编码 TUI，多 LLM provider 抽象。 |
+| [**RooCodeInc/Roo-Code**](https://github.com/RooCodeInc/Roo-Code) [![Star](https://img.shields.io/github/stars/RooCodeInc/Roo-Code.svg?style=social&label=Star)](https://github.com/RooCodeInc/Roo-Code) | 2024 年 | VS Code 多智能体开发团队，含 Architect/Coder/Reviewer 角色。 |
+| [**bytedance/trae-agent**](https://github.com/bytedance/trae-agent) [![Star](https://img.shields.io/github/stars/bytedance/trae-agent.svg?style=social&label=Star)](https://github.com/bytedance/trae-agent) | 2025 年 | 字节跳动模块化、面向 SWE-bench 的软件工程智能体。 |
+| [**github/copilot-cli**](https://github.com/github/copilot-cli) [![Star](https://img.shields.io/github/stars/github/copilot-cli.svg?style=social&label=Star)](https://github.com/github/copilot-cli) | 2026 年 | GitHub Copilot 正式发布的终端智能体 CLI，跨会话规划、构建、审查。 |
+| [**badlogic/pi-mono**](https://github.com/badlogic/pi-mono) [![Star](https://img.shields.io/github/stars/badlogic/pi-mono.svg?style=social&label=Star)](https://github.com/badlogic/pi-mono) | 2025 年 8 月 | monorepo 编码智能体工具包——统一 LLM API、TUI + web UI；OpenClaw 嵌入此处的 `pi-coding-agent` SDK。 |
+
+### 智能体框架与编排
+
+| 仓库 | 推出时间 | 重点 |
+|:-----------|:-------|:------|
+| [**geekan/MetaGPT**](https://github.com/geekan/MetaGPT) [![Star](https://img.shields.io/github/stars/geekan/MetaGPT.svg?style=social&label=Star)](https://github.com/geekan/MetaGPT) | 2023 年 | 角色分工的多智能体软件公司模拟（ICLR 2024 oral）。 |
+| [**microsoft/autogen**](https://github.com/microsoft/autogen) [![Star](https://img.shields.io/github/stars/microsoft/autogen.svg?style=social&label=Star)](https://github.com/microsoft/autogen) | 2023 年 | 微软研究院多智能体对话框架（COLM 2024）。 |
+| [**langchain-ai/langgraph**](https://github.com/langchain-ai/langgraph) [![Star](https://img.shields.io/github/stars/langchain-ai/langgraph.svg?style=social&label=Star)](https://github.com/langchain-ai/langgraph) | 2024 年 | 基于状态图的多智能体编排，含检查点。 |
+| [**openai/openai-agents-python**](https://github.com/openai/openai-agents-python) [![Star](https://img.shields.io/github/stars/openai/openai-agents-python.svg?style=social&label=Star)](https://github.com/openai/openai-agents-python) | 2024 年 | OpenAI 轻量多智能体框架，含 handoff 与 guardrail。 |
+| [**crewAIInc/crewAI**](https://github.com/crewAIInc/crewAI) [![Star](https://img.shields.io/github/stars/crewAIInc/crewAI.svg?style=social&label=Star)](https://github.com/crewAIInc/crewAI) | 2023 年 | 精简 Python 框架，角色化多智能体协作，独立于 LangChain。 |
+| [**openai/symphony**](https://github.com/openai/symphony) [![Star](https://img.shields.io/github/stars/openai/symphony.svg?style=social&label=Star)](https://github.com/openai/symphony) | 2026 年 2 月 | OpenAI 的编排方案，用于隔离、自主的实现运行。 |
+| [**ComposioHQ/agent-orchestrator**](https://github.com/ComposioHQ/agent-orchestrator) [![Star](https://img.shields.io/github/stars/ComposioHQ/agent-orchestrator.svg?style=social&label=Star)](https://github.com/ComposioHQ/agent-orchestrator) | 2025 年 | 并行 AI 智能体编排层，含 git worktree 隔离。 |
+| [**coleam00/Archon**](https://github.com/coleam00/Archon) [![Star](https://img.shields.io/github/stars/coleam00/Archon.svg?style=social&label=Star)](https://github.com/coleam00/Archon) | 2025 年 2 月 | 确定性 harness——YAML 定义工作流与执行审计跟踪。 |
+
+### 记忆与持久化上下文
+
+| 仓库 | 推出时间 | 重点 |
+|:-----------|:-------|:------|
+| [**mem0ai/mem0**](https://github.com/mem0ai/mem0) [![Star](https://img.shields.io/github/stars/mem0ai/mem0.svg?style=social&label=Star)](https://github.com/mem0ai/mem0) | 2024 年 | 生产级记忆层，含 LoCoMo 与 LongMemEval 基准（arXiv:2504.19413）。 |
+| [**letta-ai/letta**](https://github.com/letta-ai/letta) [![Star](https://img.shields.io/github/stars/letta-ai/letta.svg?style=social&label=Star)](https://github.com/letta-ai/letta) | 2023 年 | 有状态智能体平台，OS 式分层记忆分页（原 MemGPT，COLM 2024）。 |
 | [**MemPalace/mempalace**](https://github.com/MemPalace/mempalace) [![Star](https://img.shields.io/github/stars/MemPalace/mempalace.svg?style=social&label=Star)](https://github.com/MemPalace/mempalace) | 2026 年 | AI 智能体的本地优先记忆系统。 |
+
+### Skill 与 Harness 扩展
+
+| 仓库 | 推出时间 | 重点 |
+|:-----------|:-------|:------|
+| [**addyosmani/agent-skills**](https://github.com/addyosmani/agent-skills) [![Star](https://img.shields.io/github/stars/addyosmani/agent-skills.svg?style=social&label=Star)](https://github.com/addyosmani/agent-skills) | 2025 年 | 22 个生命周期 skill 配套斜杠命令（`/spec`、`/plan`、`/build`、`/test`、`/review`、`/ship`）。 |
+| [**obra/superpowers**](https://github.com/obra/superpowers) [![Star](https://img.shields.io/github/stars/obra/superpowers.svg?style=social&label=Star)](https://github.com/obra/superpowers) | 2025 年 | 跨 harness（Claude Code、OpenCode、Codex）的强制工作流 skill 框架。 |
+| [**lsdefine/GenericAgent**](https://github.com/lsdefine/GenericAgent) [![Star](https://img.shields.io/github/stars/lsdefine/GenericAgent.svg?style=social&label=Star)](https://github.com/lsdefine/GenericAgent) | 2025 年 | 极简自演化自主智能体框架——9 个原子工具加约 100 行 ReAct 循环。 |
+
+### MCP 生态
+
+| 仓库 | 推出时间 | 重点 |
+|:-----------|:-------|:------|
+| [**PrefectHQ/fastmcp**](https://github.com/prefecthq/fastmcp) [![Star](https://img.shields.io/github/stars/prefecthq/fastmcp.svg?style=social&label=Star)](https://github.com/prefecthq/fastmcp) | 2024 年 | 构建 MCP 服务器与客户端的 Python 框架，事实上的 SDK。 |
+| [**upstash/context7**](https://github.com/upstash/context7) [![Star](https://img.shields.io/github/stars/upstash/context7.svg?style=social&label=Star)](https://github.com/upstash/context7) | 2025 年 | 为 LLM 与 AI 编辑器提供实时库文档的 MCP 服务器。 |
+| [**microsoft/playwright-mcp**](https://github.com/microsoft/playwright-mcp) [![Star](https://img.shields.io/github/stars/microsoft/playwright-mcp.svg?style=social&label=Star)](https://github.com/microsoft/playwright-mcp) | 2024 年 | 微软官方 MCP 服务器，使用 accessibility tree 快照。 |
+
+### 专业领域智能体
+
+| 仓库 | 推出时间 | 重点 |
+|:-----------|:-------|:------|
+| [**666ghj/MiroFish**](https://github.com/666ghj/MiroFish) [![Star](https://img.shields.io/github/stars/666ghj/MiroFish.svg?style=social&label=Star)](https://github.com/666ghj/MiroFish) | 2026 年 3 月 | 多智能体群体智能模拟引擎。 |
 | [**multica-ai/multica**](https://github.com/multica-ai/multica) [![Star](https://img.shields.io/github/stars/multica-ai/multica.svg?style=social&label=Star)](https://github.com/multica-ai/multica) | 2026 年 | 用于任务分配和技能复合的托管智能体平台。 |
-| [**badlogic/pi-mono**](https://github.com/badlogic/pi-mono) [![Star](https://img.shields.io/github/stars/badlogic/pi-mono.svg?style=social&label=Star)](https://github.com/badlogic/pi-mono) | 2025 年 8 月 | monorepo 编码智能体工具包——统一 LLM API（OpenAI/Anthropic/Google）、TUI + web UI、per-cwd 会话持久化。 |
-| [**coleam00/Archon**](https://github.com/coleam00/Archon) [![Star](https://img.shields.io/github/stars/coleam00/Archon.svg?style=social&label=Star)](https://github.com/coleam00/Archon) | 2025 年 2 月 | 确定性 harness——YAML 定义的工作流与执行审计跟踪；与模型驱动的智能体循环对比。 |
-| [**HKUDS/nanobot**](https://github.com/HKUDS/nanobot) [![Star](https://img.shields.io/github/stars/HKUDS/nanobot.svg?style=social&label=Star)](https://github.com/HKUDS/nanobot) | 2026 年 2 月 | 来自 HKU-DS 的超轻量级个人 AI 智能体；与重型 harness 的简约设计对比。 |
+| [**HKUDS/nanobot**](https://github.com/HKUDS/nanobot) [![Star](https://img.shields.io/github/stars/HKUDS/nanobot.svg?style=social&label=Star)](https://github.com/HKUDS/nanobot) | 2026 年 2 月 | 来自 HKU-DS 的超轻量级个人 AI 智能体。 |
 | [**HKUDS/OpenHarness**](https://github.com/HKUDS/OpenHarness) [![Star](https://img.shields.io/github/stars/HKUDS/OpenHarness.svg?style=social&label=Star)](https://github.com/HKUDS/OpenHarness) | 2026 年 4 月 | 带有内置个人智能体（Ohmo）的开放智能体 harness；harness 架构的学术参考点。 |
-| [**openai/symphony**](https://github.com/openai/symphony) [![Star](https://img.shields.io/github/stars/openai/symphony.svg?style=social&label=Star)](https://github.com/openai/symphony) | 2026 年 2 月 | OpenAI 的编排方案，用于隔离、自主的实现运行——对应并行会话这一设计维度。 |
 | [**karpathy/autoresearch**](https://github.com/karpathy/autoresearch) [![Star](https://img.shields.io/github/stars/karpathy/autoresearch.svg?style=social&label=Star)](https://github.com/karpathy/autoresearch) | 2026 年 3 月 | Andrej Karpathy 出品：在单 GPU 上自动运行 nanochat 训练研究的 AI 智能体循环。 |
-| [**HKUDS/CLI-Anything**](https://github.com/HKUDS/CLI-Anything) [![Star](https://img.shields.io/github/stars/HKUDS/CLI-Anything.svg?style=social&label=Star)](https://github.com/HKUDS/CLI-Anything) | 2026 年 3 月 | "Making ALL Software Agent-Native"——把任意软件包装成智能体可调用工具的统一 CLI 接入层。 |
-| [**Panniantong/Agent-Reach**](https://github.com/Panniantong/Agent-Reach) [![Star](https://img.shields.io/github/stars/Panniantong/Agent-Reach.svg?style=social&label=Star)](https://github.com/Panniantong/Agent-Reach) | 2026 年 2 月 | 一个 CLI 让智能体免费读写 Twitter、Reddit、YouTube、GitHub、Bilibili、小红书；自带 MCP 和 Claude Code / Cursor 集成。 |
-| [**agentscope-ai/QwenPaw**](https://github.com/agentscope-ai/QwenPaw) [![Star](https://img.shields.io/github/stars/agentscope-ai/QwenPaw.svg?style=social&label=Star)](https://github.com/agentscope-ai/QwenPaw) | 2026 年 2 月 | AgentScope 团队的个人 AI 助手——本地或云端部署，支持多聊天 app，能力可扩展。 |
-| [**cft0808/edict**](https://github.com/cft0808/edict) [![Star](https://img.shields.io/github/stars/cft0808/edict.svg?style=social&label=Star)](https://github.com/cft0808/edict) | 2026 年 2 月 | "三省六部制"——基于 OpenClaw 的多智能体编排系统，9 个专门智能体 + 实时 dashboard + 模型配置 + 完整审计追踪。 |
+| [**HKUDS/CLI-Anything**](https://github.com/HKUDS/CLI-Anything) [![Star](https://img.shields.io/github/stars/HKUDS/CLI-Anything.svg?style=social&label=Star)](https://github.com/HKUDS/CLI-Anything) | 2026 年 3 月 | "Making ALL Software Agent-Native"——把任意软件包装成智能体可调用工具。 |
+| [**Panniantong/Agent-Reach**](https://github.com/Panniantong/Agent-Reach) [![Star](https://img.shields.io/github/stars/Panniantong/Agent-Reach.svg?style=social&label=Star)](https://github.com/Panniantong/Agent-Reach) | 2026 年 2 月 | 一个 CLI 让智能体读写 Twitter、Reddit、YouTube、GitHub、Bilibili、小红书。 |
+| [**agentscope-ai/QwenPaw**](https://github.com/agentscope-ai/QwenPaw) [![Star](https://img.shields.io/github/stars/agentscope-ai/QwenPaw.svg?style=social&label=Star)](https://github.com/agentscope-ai/QwenPaw) | 2026 年 2 月 | AgentScope 团队的个人 AI 助手。 |
+| [**cft0808/edict**](https://github.com/cft0808/edict) [![Star](https://img.shields.io/github/stars/cft0808/edict.svg?style=social&label=Star)](https://github.com/cft0808/edict) | 2026 年 2 月 | 基于 OpenClaw 的多智能体编排，模拟唐代三省六部制（9 个专门智能体 + 实时 dashboard + 完整审计）。 |
 
 <p align="right"><a href="#深入理解-claude-code">↑ 返回顶部</a></p>
+
+</details>
 
 ---
 
