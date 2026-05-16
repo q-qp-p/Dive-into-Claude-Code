@@ -281,7 +281,8 @@ Claude Code 回答了每个生产级编码智能体都必须面对的**四个设
 
 ---
 
-## 构建你自己的 AI 智能体：设计指南
+<details>
+<summary><h2>构建你自己的 AI 智能体：设计指南</h2></summary>
 
 > 本文不是一份写代码的教程，而是一份关于**你必须做出的设计决策**的指南——素材全部来自对 Claude Code 的架构分析。
 
@@ -300,9 +301,12 @@ Claude Code 回答了每个生产级编码智能体都必须面对的**四个设
 
 <p align="right"><a href="#深入理解-claude-code">↑ 返回顶部</a></p>
 
+</details>
+
 ---
 
-## 跨系统对比：Claude Code vs OpenClaw vs Hermes-Agent
+<details>
+<summary><h2>跨系统对比：Claude Code vs OpenClaw vs Hermes-Agent</h2></summary>
 
 同样的设计问题，在不同的部署情境下会给出不同的架构答案。下表以论文第 10 节用于 OpenClaw 对比的六个设计维度，对 Claude Code v2.1.88 与两个具有代表性的同类系统进行对比——[OpenClaw](https://github.com/openclaw/openclaw)（本地优先的多渠道个人助手网关）和 [NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent)（支持多部署场景的自改进智能体）。各单元格均有来源依据，这不是功能评分表。
 
@@ -319,9 +323,12 @@ Claude Code 回答了每个生产级编码智能体都必须面对的**四个设
 
 <p align="right"><a href="#深入理解-claude-code">↑ 返回顶部</a></p>
 
+</details>
+
 ---
 
-## 社区项目与研究
+<details>
+<summary><h2>社区项目与研究</h2></summary>
 
 围绕 Claude Code 架构的仓库、重新实现和学术论文的精选索引。
 
@@ -435,6 +442,8 @@ Claude Code 回答了每个生产级编码智能体都必须面对的**四个设
 **查看更完整的精选资源列表：[docs/related-resources_zh.md](./docs/related-resources_zh.md)**
 
 <p align="right"><a href="#深入理解-claude-code">↑ 返回顶部</a></p>
+
+</details>
 
 ---
 

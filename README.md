@@ -281,7 +281,8 @@ Three channels: append-only JSONL transcripts, global prompt history, subagent s
 
 ---
 
-## Build Your Own AI Agent: A Design Guide
+<details>
+<summary><h2>Build Your Own AI Agent: A Design Guide</h2></summary>
 
 > Not a coding tutorial. A guide to the **design decisions** you must make, derived from architectural analysis.
 
@@ -300,9 +301,12 @@ Every production agent must navigate these decisions:
 
 <p align="right"><a href="#dive-into-claude-code-the-design-space-of-todays-ai-agent-system">↑ Back to top</a></p>
 
+</details>
+
 ---
 
-## Cross-System Comparison: Claude Code vs OpenClaw vs Hermes-Agent
+<details>
+<summary><h2>Cross-System Comparison: Claude Code vs OpenClaw vs Hermes-Agent</h2></summary>
 
 The same recurring design questions admit different architectural answers when the deployment context changes. The table below contrasts Claude Code v2.1.88 with two notable peers — [OpenClaw](https://github.com/openclaw/openclaw), a local-first multi-channel personal-assistant gateway, and [NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent), a self-improving multi-deployment agent — across the six design dimensions Section 10 of the paper uses for the OpenClaw comparison. Cells are source-grounded; this is not a feature scoreboard.
 
@@ -319,9 +323,12 @@ The same recurring design questions admit different architectural answers when t
 
 <p align="right"><a href="#dive-into-claude-code-the-design-space-of-todays-ai-agent-system">↑ Back to top</a></p>
 
+</details>
+
 ---
 
-## Community Projects & Research
+<details>
+<summary><h2>Community Projects & Research</h2></summary>
 
 A curated map of the repos, reimplementations, and academic papers surrounding Claude Code's architecture.
 
@@ -435,6 +442,8 @@ External resources that complement this paper's design-space analysis — concep
 **See the full curated list with more resources: [docs/related-resources.md](./docs/related-resources.md)**
 
 <p align="right"><a href="#dive-into-claude-code-the-design-space-of-todays-ai-agent-system">↑ Back to top</a></p>
+
+</details>
 
 ---
 
